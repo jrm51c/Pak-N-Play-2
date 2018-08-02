@@ -1,0 +1,107 @@
+{{> items/navbar}}
+
+<div id="container">
+      
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"></div>
+       
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"> 
+          <form action="/login" method="post">
+
+            <div class="card" id="login">
+                <div class="card-body" >
+                    <div class="heading">
+                        <h4>Sign In</h4>
+                        <div class="sign-up-link-container">
+                            <div>
+                                New User?
+                                <a id="sign-up-link" href="#">Create Account</a>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" autofocus spellcheck="true" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="form-label">Password</label>
+                            <br>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="remember-me-checkbox" checked>
+                            <label for="remember-me-checkbox" tabindex="-1">Remember Me</label>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-secondary" id="sign-in">
+                            Sign In                               
+                         </button>
+                        </div>
+                </div>
+            </div>
+          </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"></div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <form action="/register" method="post">
+            <div class="card" id="new-account" style="display:none;">
+                <div class="card-body">
+                    <div class="heading">
+                        <h4>Create Account</h4>
+                        <div class="sign-up-link-container">
+                            <div>
+                                Already have an account?
+                                <a id="login-link" href="#">Sign in</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="create-account-form">
+                        <div class="form-group">
+                            <label for="first-name" class="form-label">First Name</label>
+                            <input type="text" class="form-control" name="first_name" id="first-name" autofocus spellcheck="true" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" name="last_name" id="last-name" spellcheck="true" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="user-email" class="form-label">Email</label>
+                            <input type="email" class="form-control" name="email" id="user-email" placeholder="name@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number" class="form-label">Address</label>
+                            <input type="text" class="form-control" name="address" id="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number" class="form-label">City</label>
+                            <input type="text" class="form-control" name="city" id="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number" class="form-label">State</label>
+                            <input type="text" class="form-control" name="state" id="state" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pass-word" class="form-label">Password</label>
+                            <br>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-secondary" id="create-account">
+                                Create Account
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </form>
+    </div>
+   
+</div>
+
+<br>
+<br>
+
+{{> items/footer}}
