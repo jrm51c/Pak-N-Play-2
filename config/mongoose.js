@@ -8,8 +8,10 @@ var mongoose = require("mongoose")
 
 var currentEnvironment = local;
 
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";  //"mongodb://localhost/ // dave added
+
 mongoose.Promise = global.Promise;
-mongoose.connect(currentEnvironment, {server:{auto_reconnect:true}});
+mongoose.connect(MONGODB_URI, {server:{auto_reconnect:true}}); //currentEnvironment
 
 var db = mongoose.connection;
 
