@@ -28,3 +28,6 @@ module.exports = function (app, jwt) {
         res.redirect('/');
     });
 }
+
+//<!-- testing <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  //  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"> -->

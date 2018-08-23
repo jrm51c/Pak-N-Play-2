@@ -13,3 +13,7 @@ var stockSchema = new Schema({
 });
 
 mongoose.model("stock", stockSchema);
+
+
+//<!-- testing <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  //  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"> -->

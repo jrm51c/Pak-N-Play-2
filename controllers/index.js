@@ -13,7 +13,8 @@ module.exports = function(app, jwt) {
       res.render("index", hbsObject);
     });
   });
-
+/*   <!-- testing <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"> --> */
   app.get("/api/paknplay", function(req, res) {
     paknplay.all(function(data) {
       var invObject = {
