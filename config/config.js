@@ -9,7 +9,7 @@ if (process.env.JAWSDB_URL) {
     connection = mysql.createConnection({
         host: 'localhost',
         user: 'root',
-        password: root,//'Enkidu#1969',
+        password: 'root',//'Enkidu#1969',
         database: 'paknplay_db'
     });
 };

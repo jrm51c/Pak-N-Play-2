@@ -1,0 +1,59 @@
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col-lg-2 col-xs-12">
+    <h1>Rent-A-Rattle!</h1>
+    <p>Pack less when you travel</p>
+  </div>
+  <div class="col-lg-10 col-xs-12">
+    <div class="pull-right">
+      <h3>Add an Item</h3>
+      <form class="create-form form-inline">
+
+        <div class="form-group">
+          <label for="ia">Item Name:</label>
+          <input type="text" id="ia" name="item_name">
+        </div>
+
+        <div class="form-group">
+          <label for="pa">Price:</label>
+          <input type="text" id="pa" name="price">
+        </div>
+
+        <div class="form-group">
+          
+          <label for="purchased">Borrow?</label>
+          <label class="radio-inline">
+            <input type="radio" name="purchased" value="1" checked> Rented!
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="purchased" value="0"> Returned!
+          </label>
+        </div>
+
+        <button type="submit">Add Item</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-lg-6">
+    <h3 class="itemTitle">Select Items to Rent:</h3>
+
+    <div class="availableList">
+      {{#each items}} {{#unless purchased}} {{> items/item-block purchase=true}} {{/unless}} {{/each}}
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <h3 class="itemTitle">Select Items to Return:</h3>
+
+    <div class="rentedList">
+      {{#each items}} {{#if purchased}} {{> items/item-block purchase=false}} {{/if}} {{/each}}
+    </div>
+  </div>
+</div>
+
+</div>
