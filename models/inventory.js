@@ -32,7 +32,7 @@ var inventory = {
 // Export the database functions for the controller (itemsController.js).
 module.exports = inventory;
 
-
+console.log(inventory);
 /* var connection = mysql.createConnection({
 
     host: process.env.DB_HOST || "localhost",
