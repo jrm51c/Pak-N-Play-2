@@ -14,7 +14,6 @@ if (process.env.JAWSDB_URL) {
     });
 };
 /* var connection = mysql.createConnection({
-
     host: process.env.DB_HOST || "localhost",
     port: 3306,
     user: process.env.DB_USERNAME || "root",

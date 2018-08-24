@@ -1,5 +1,3 @@
-
-
 // Import the model (items.js) to use its database functions.
 var items = require("../models/items.js");
 
@@ -46,4 +44,12 @@ module.exports = function(app, jwt){
     });
   });
 }
+
+/* var connection = mysql.createConnection({
+    host: process.env.DB_HOST || "localhost",
+    port: 3306,
+    user: process.env.DB_USERNAME || "root",
+    password: process.env.DB_PASSWORD || "root",
+    database: process.env.DB_DATABASE || "paknplay_db"
+}); */
 

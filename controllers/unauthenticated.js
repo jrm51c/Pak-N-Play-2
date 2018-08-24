@@ -29,5 +29,11 @@ module.exports = function (app, jwt) {
     });
 }
 
-//<!-- testing <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-  //  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"> -->
+/* var connection = mysql.createConnection({
+
+    host: process.env.DB_HOST || "localhost",
+    port: 3306,
+    user: process.env.DB_USERNAME || "root",
+    password: process.env.DB_PASSWORD || "root",
+    database: process.env.DB_DATABASE || "paknplay_db"
+}); */
